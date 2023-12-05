@@ -1,13 +1,25 @@
 import Link from "next/link"
-import style from '@/styles/header.module.css'
+import styleH from '@/styles/header.module.css'
+import styleF from '@/styles/footer.module.css' 
+import { useRouter } from 'next/router'
 
 const Navegacion = () => {
+    const router = useRouter()
+
   return (
-    <nav className={style.navegacion}>
-        <Link href={'/'}>Inicio</Link>
-        <Link href={'/nosotros'}>Nosotros</Link>
-        <Link href={'/blog'}>Blog</Link>
-        <Link href={'/tienda'}>Tienda</Link>
+    <nav className={`${styleH.navegacion} ${styleF.navegacion}`}>
+        <Link href={'/'} legacyBehavior> 
+            <a className={router.pathname === '/' ? styleH.pagina : ''}
+            > Inicio </a></Link>
+        <Link href={'/nosotros'} legacyBehavior> 
+            <a className={router.pathname === '/nosotros' ? styleH.pagina : ''}
+            > Nosotros </a></Link>
+        <Link href={'/blog'} legacyBehavior> 
+            <a className={router.pathname === '/blog' ? styleH.pagina : ''}
+            > Blog </a></Link>
+        <Link href={'/tienda'} legacyBehavior> 
+            <a className={router.pathname === '/tienda' ? styleH.pagina : ''}
+            > Tienda </a></Link>
     </nav>
   )
 }
