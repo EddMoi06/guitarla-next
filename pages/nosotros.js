@@ -10,7 +10,7 @@ const Nosotros = () => {
     >
 
     <main className={`contenedor ${style.nosotros}`}>  
-        <h2 className="heading"> Nosotros </h2>
+        <h1 className="heading"> Nosotros </h1>
 
         <div className={style.contenido}>
 

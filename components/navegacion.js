@@ -14,12 +14,13 @@ const Navegacion = () => {
         <Link href={'/nosotros'} legacyBehavior> 
             <a className={router.pathname === '/nosotros' ? styleH.pagina : ''}
             > Nosotros </a></Link>
-        <Link href={'/blog'} legacyBehavior> 
-            <a className={router.pathname === '/blog' ? styleH.pagina : ''}
-            > Blog </a></Link>
         <Link href={'/tienda'} legacyBehavior> 
             <a className={router.pathname === '/tienda' ? styleH.pagina : ''}
             > Tienda </a></Link>
+        <Link href={'/blog'} legacyBehavior> 
+            <a className={router.pathname === '/blog' ? styleH.pagina : ''}
+            > Blog </a></Link>
+        
     </nav>
   )
 }
