@@ -20,6 +20,24 @@ const urlGuitarra = ({guitarra}) => {
             <h3>{nombre}</h3>
                 <p className={style.descripcion}>{descripcion}</p>
                 <p className={style.precio}>${precio}</p>
+
+                <form className={style.formulario}>
+                    <label htmlFor="cantidad">Cantidad</label>
+
+                    <select id="cantidad">
+                        <option value="0">-- Seleccione --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                    <input 
+                        type="submit"
+                        value='Agregar al Carrito' 
+                    />
+                </form>
             </div>
         </div>
     </Layout>
