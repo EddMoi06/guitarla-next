@@ -28,7 +28,7 @@ const Header = () => {
                     <a className={router.pathname === '/blog' ? style.pagina : ''}
                     > Blog </a></Link>
                 <Link href={'/carrito'} legacyBehavior> 
-                    <a className={router.pathname === '/carrito' ? style.pagina : ''}
+                    <a
                     > <Image
                           src={'/img/carrito.png'}
                           width={30}

@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import style from '@/styles/guitarras.module.css'
 
 const Guitarras = ({guitarra}) => {
+
+    
     const {nombre, precio, imagen, descripcion, url} = guitarra.attributes;
     return (
         <div className={style.guitarra}>
